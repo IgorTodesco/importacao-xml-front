@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Remover Arquivo</h1>
+<div mat-dialog-content>
+  Você tem certeza que deseja remover o arquivo {{data.item.name}} da lista de arquivos a serem importados?
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close (click)="onNoClick()">Não</button>
+  <button mat-button mat-dialog-close cdkFocusInitial [mat-dialog-close]="deletar()">Sim</button>
+</div>
